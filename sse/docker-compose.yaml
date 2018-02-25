@@ -1,0 +1,26 @@
+version: "3"
+services:
+  stream-api:
+    build: .
+    image: stream-api:1.0-SNAPSHOT
+    ports:
+      - "8080:8080"
+      - "8081"
+#    environment:
+#      JDBC_DRIVER: "com.mysql.cj.jdbc.Driver"
+#      JDBC_URL: "jdbc:mysql://db:3306/mydb?useSSL=false"
+#
+#  db:
+#    image: mysql
+#    ports:
+#      - 3306
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: 123456
+#      MYSQL_DATABASE: mydb
+#    volumes:
+#      - stream-api-volume:/var/lib/mysql
+#
+#volumes:
+#  stream-api-volume:
